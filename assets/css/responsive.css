@@ -1,0 +1,275 @@
+@media only screen and (min-width : 1600px) {
+    .fallingImg ul {
+        max-width: 80rem;
+        top: -34rem;
+    }
+}
+
+@media only screen and (max-width : 1024px) {
+
+    .headLogo {
+        width: 180px;
+        height: 50px;
+    }
+
+    .headMenu {
+        display: none;
+    }
+
+    .mainBanner {
+        margin: 80px 0;
+    }
+
+    .mainBtn {
+        padding-left: 0;
+    }
+
+    .banContent h1,
+    .healpUsRow h2 {
+        font-size: 90px;
+        line-height: 90px;
+    }
+
+    .banContent h1::after {
+        height: 22px;
+        bottom: 20px;
+        max-width: 500px;
+    }
+
+    .banContent {
+        gap: 30px;
+    }
+
+    .banContent p {
+        max-width: 400px;
+    }
+
+    .mainBtn a {
+        font-size: 14px;
+        line-height: 13px;
+        padding: 10px 12px 12px
+    }
+
+    .mainBtn::before {
+        width: 55px;
+    }
+
+    .morePlayerRow {
+        gap: 20px;
+    }
+
+    .playerCardBox {
+        height: 350px;
+    }
+
+    .playerCardFront {
+        padding: 15px 10px;
+    }
+
+    .playerCardFront::before,
+    .playerCardFront::after {
+        height: 60px;
+    }
+
+    .playerName h3 {
+        font-size: 20px;
+        line-height: 20px;
+        min-height: 20px;
+        max-height: 20px;
+    }
+
+    .playerName span {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .playerImg {
+        height: 235px;
+    }
+
+    .playerImg img {
+        top: 5px;
+    }
+
+    .morePlayer .mainBtn {
+        padding-top: 40px;
+    }
+
+    .morePlayer {
+        margin: 80px 0;
+    }
+
+    .helpUs {
+        margin: 80px 0;
+    }
+
+    .healpUsRow {
+        gap: 20px;
+    }
+
+    .healpUsRow .mainBtn::before {
+        height: 55px;
+    }
+
+    .healpUsRow::after {
+        height: 300px;
+        width: 200px;
+        bottom: -180px;
+    }
+
+    .healpUsRow {
+        padding-bottom: 80px;
+    }
+
+    .supportRowLeft {
+        padding: 50px 0 180px;
+    }
+
+    .supportRowLeft h2,
+    .supportRowRight h2 {
+        font-size: 42px;
+        line-height: 42px;
+        margin-bottom: 30px;
+    }
+
+    .supportRowLeft span,
+    .supportRowRight span {
+        margin-bottom: 20px;
+    }
+
+    .supportRowRight {
+        padding: 40px;
+    }
+
+    .supportRowRight::after,
+    .supportRowRight::before {
+        width: 40px;
+    }
+
+    .supportRowLeft::after {
+        height: 300px;
+        width: 200px;
+    }
+
+    .donate {
+        padding: 80px 0;
+    }
+
+    .fallingImgMain {
+        width: 40rem;
+        height: 13rem;
+    }
+
+    .fallingImg {
+        margin-top: -2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .headLogo {
+        width: 160px;
+        height: 45px;
+    }
+
+    .mainBanner {
+        margin: 60px 0;
+    }
+
+    .banContent h1,
+    .healpUsRow h2 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .banContent h1::after {
+        height: 20px;
+        bottom: 12px;
+        max-width: 400px;
+    }
+
+    .banContent p {
+        grid-column: span 2;
+    }
+
+    .banContent {
+        gap: 20px;
+    }
+
+    .morePlayer {
+        margin: 60px 0;
+    }
+
+    .morePlayerRow {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .morePlayer .mainBtn {
+        position: relative;
+        grid-column: span 2;
+        margin: 0 auto;
+        transform: unset;
+        top: 0;
+        right: 0;
+    }
+
+    .playerCardBox {
+        height: 450px;
+    }
+
+    .playerImg {
+        height: 390px;
+    }
+
+    .playerCardFront::after {
+        right: 0;
+    }
+
+    .helpUs {
+        margin: 60px 0;
+    }
+
+    .healpUsRow .mainBtn::before {
+        height: 50px;
+    }
+
+    .healpUsRow::after {
+        height: 250px;
+        width: 150px;
+        bottom: -170px;
+    }
+
+    .supportRowLeft {
+        padding: 40px 0 140px;
+    }
+
+    .supportRowLeft h2,
+    .supportRowRight h2 {
+        font-size: 34px;
+        line-height: 34px;
+        margin-bottom: 20px;
+    }
+
+    .supportRowLeft::after {
+        height: 250px;
+        width: 150px;
+        bottom: -90px;
+    }
+
+    .donateTop {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .donateTop .mainBtn {
+        margin: 30px auto 0;
+    }
+
+    .donateTop p {
+        max-width: 625px;
+        margin: 0 auto;
+    }     .fallingImg {
+        margin-top: -6rem;
+    }    .fallingImgMain {
+        width: 40rem;
+        height: 15rem;
+    }
+}
