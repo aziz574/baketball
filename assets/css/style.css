@@ -676,7 +676,9 @@ body {
 /* DONATE */
 
 .donate {
-    padding: 100px 0;
+    margin: 100px 0;
+    position: relative;
+    z-index: 22;
 }
 
 .donateTop {
