@@ -151,8 +151,30 @@ body {
     z-index: -1;
 }
 
-.youth-engagement .banContent h1 {
+.youth-engagement .banContent h1,
+.development-squad .banContent h1 {
     max-width: 700px;
+}
+
+.development-squad .banContent h1::after {
+    max-width: 430px;
+}
+
+.about-us .banContent h1 {
+    max-width: 980px;
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.about-us .banContent h1::after {
+    content: '';
+    height: 22px;
+    bottom: 20px;
+    max-width: 900px;
+}
+
+.about-us .banContent p {
+    max-width: 1000px;
 }
 
 .banContent p {
@@ -995,6 +1017,15 @@ body {
     margin: 100px 0;
 }
 
+.studyMain h2 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 42px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 .studyRow {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1071,6 +1102,19 @@ body {
     max-width: 230px;
 }
 
+.studyBox .mainBtn::before {
+    display: none;
+}
+
+.studyBox .mainBtn {
+    padding: 0;
+}
+
+.studyBox .mainBtn a {
+    padding: 10px 20px 12px;
+}
+
+
 /* STUDY  */
 
 /* COMPANY-SLIDER */
@@ -1108,7 +1152,6 @@ body {
     width: 50px;
     z-index: 2;
     pointer-events: none;
-    filter: blur(5px);
 }
 
 .companySlider .swiper::before {
@@ -1143,3 +1186,220 @@ body {
 }
 
 /* COMPANY-SLIDER */
+
+/* DEVELOPMENT-SQAUD */
+
+.developmentSquad {
+    margin: 100px 0;
+}
+
+.devSqaudImg {
+    height: 600px;
+    width: 100%;
+    padding: 40px;
+    background: #fff;
+}
+
+.devSqaudImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 2px dashed #e58af7;
+}
+
+/* DEVELOPMENT-SQAUD */
+
+/* CONTENT-WITH-BOX */
+
+.cntWithBox {
+    margin: 100px 0;
+}
+
+.cntWithBox h2 {
+    font-size: 32px;
+    line-height: 32px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cntWithBox.moreBox .contWithBoxRow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contWithBoxRow {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contBox {
+    padding: 40px;
+    border: 2px dashed #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.contBox:first-child {
+    border-right: none;
+}
+
+.contBox p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.contBox h3 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.contBox span {
+    background: #e58af7;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 16px;
+    width: fit-content;
+    text-transform: capitalize;
+}
+
+.contBoxBtn {
+    color: #fff;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.reachOut {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1070px;
+    margin: 60px auto 0;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.reachOut p {
+    color: #fff;
+    max-width: 400px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+/* CONTENT-WITH-BOX */
+
+/* LEFT-IMG-CONTENT */
+
+.leftBoxImgContent {
+    margin: 100px 0;
+}
+
+.leftImgBoxRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 30px;
+}
+
+.BoxContentImg {
+    height: 700px;
+    padding: 40px;
+    width: 100%;
+    background: #fff;
+}
+
+.BoxContentImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 2px dashed #e58af7;
+}
+
+.BoxContentContent img {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+}
+
+.BoxContentContent p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* LEFT-IMG-CONTENT */
+
+/* MAIN-TEAM */
+
+.mainTeam {
+    padding: 100px 0;
+    background: url(../img/bg-box-wall.svg) repeat 0 0 / 5rem #fff;
+}
+
+.mainTeam .container{
+    position: relative;
+}
+
+.mainTeam .container::after{
+    content: '';
+    background-image: url(../img/basketTop.png);
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.mainTeam h2 {
+    font-size: 42px;
+    line-height: 42px;
+    color: #4141C1;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.mainTeamRow {
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.teamDetailSecRight span {
+    color: #4141C1;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.teamDetailSecRight p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #4141C1;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.teamDetailSecRight p:last-child {
+    margin-bottom: 0;
+}
+
+/* MAIN-TEAM */
