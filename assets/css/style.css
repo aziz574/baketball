@@ -114,6 +114,10 @@ body {
     border-left: none;
 }
 
+.drawer-btn {
+    display: none;
+}
+
 /* MAIN-HEADER */
 
 /* MAIN-BANNER */
@@ -292,6 +296,15 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     position: relative;
+}
+
+.us-placement .morePlayerRow {
+    gap: 0;
+}
+
+.us-placement .playerCardBoxHldr {
+    padding: 20px;
+    border: 2px dashed #fff;
 }
 
 .playerCardBox {
@@ -773,10 +786,7 @@ body {
     height: 16.5rem;
     background: url(../img/falling-img.png) no-repeat transparent 0 0 / contain;
     animation: Footer_fall__XOStI 4s cubic-bezier(.4, 0, .6, 1) forwards;
-}
-
-.fallingImgMain {
-    animation-play-state: running;
+    animation-play-state: paused; /* Start with animations paused */
 }
 
 @keyframes Footer_fall__XOStI {
@@ -793,6 +803,7 @@ body {
     left: -10%;
     animation: Footer_fall1__8XTJp 6s ease-out forwards;
     animation-timing-function: ease;
+    animation-play-state: paused; /* Start with animations paused */
 }
 
 @keyframes Footer_fall1__8XTJp {
@@ -813,6 +824,7 @@ body {
     animation-duration: 5.5s;
     animation-timing-function: cubic-bezier(.82, 0, .18, 1);
     z-index: 1;
+    animation-play-state: paused; /* Start with animations paused */
 }
 
 @keyframes Footer_fall2__ocXSB {
@@ -829,6 +841,7 @@ body {
     left: 30%;
     animation-delay: .8s;
     animation-name: Footer_fall5__1ZRP1;
+    animation-play-state: paused; /* Start with animations paused */
 }
 
 @keyframes Footer_fall5__1ZRP1 {
@@ -846,6 +859,7 @@ body {
     animation-delay: 1s;
     animation-name: Footer_fall4__x0iaj;
     z-index: -1;
+    animation-play-state: paused; /* Start with animations paused */
 }
 
 @keyframes Footer_fall4__x0iaj {
@@ -862,6 +876,7 @@ body {
     right: -18rem;
     animation-delay: 1.2s;
     animation-name: Footer_fall3__uTHmX;
+    animation-play-state: paused; 
 }
 
 @keyframes Footer_fall3__uTHmX {
@@ -878,6 +893,7 @@ body {
     right: 0;
     animation-delay: 1.2s;
     animation-name: Footer_fall6__dZm_u;
+    animation-play-state: paused; 
 }
 
 @keyframes Footer_fall6__dZm_u {
@@ -891,7 +907,6 @@ body {
 }
 
 /* IMAGE-FALLING */
-
 
 /* FOOTER */
 
@@ -1285,7 +1300,7 @@ body {
     align-items: center;
     justify-content: center;
     max-width: 1070px;
-    margin: 60px auto 0;
+    margin: 120px auto;
     gap: 30px;
     flex-wrap: wrap;
 }
@@ -1349,11 +1364,11 @@ body {
     background: url(../img/bg-box-wall.svg) repeat 0 0 / 5rem #fff;
 }
 
-.mainTeam .container{
+.mainTeam .container {
     position: relative;
 }
 
-.mainTeam .container::after{
+.mainTeam .container::after {
     content: '';
     background-image: url(../img/basketTop.png);
     height: 200px;
@@ -1361,7 +1376,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     left: 0;
-    top: 0;
+    bottom: -200px;
     position: absolute;
 }
 
@@ -1402,4 +1417,134 @@ body {
     margin-bottom: 0;
 }
 
+.mainTeam.invertedTeam {
+    background: #d9d9d9;
+}
+
+.mainTeam.invertedTeam .container {
+    background: transparent;
+}
+
+.mainTeam.invertedTeam .mainTeamRow {
+    grid-template-columns: 1fr 35%;
+    position: relative;
+}
+
+.mainTeam.invertedTeam .mainTeamRow::after {
+    content: '';
+    background: url(../img/left-bird-full.png) no-repeat 50% / contain transparent;
+    height: 100%;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    right: -60px;
+}
+
+.mainTeam.invertedTeam .mainTeamRow::before {
+    content: '';
+    background: url(../img/left-bird-full.png) no-repeat 50% / contain transparent;
+    height: 100%;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: -60px;
+    transform: scaleX(-1);
+}
+
+.mainTeam.invertedTeam .mainTeamRow .teamDetailSecRight {
+    order: 1;
+}
+
+.mainTeam.invertedTeam .mainTeamRow .teamDetailSecLeft {
+    order: 2;
+}
+
+.mainTeam.invertedTeam .container::after {
+    content: '';
+    background-image: url(../img/left-support.png);
+    height: 300px;
+    width: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+    bottom: -200px;
+    position: absolute;
+}
+
 /* MAIN-TEAM */
+
+/* BALL-ANIMATED */
+
+.ballAnimated {
+    margin: 100px 0 0;
+}
+
+.ballAnimated .container {
+    padding: 0;
+    position: relative;
+}
+
+.ballAnimated .container::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 400px;
+    background-image: url(../img/ballFull.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    will-change: transform;
+    animation: moveLeftToRight 1.5s ease-in-out forwards;
+    animation-play-state: paused;
+}
+
+.ballAnimatedRow {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+    padding: 0 20px;
+}
+
+.ballAnimatedRow img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+@keyframes rollLeftToRight {
+    0% {
+        transform: translateX(-100%) rotate(0deg); /* Start off-screen left */
+    }
+    100% {
+        transform: translateX(calc(100vw - 430px)) rotate(360deg); /* Move to the right edge of the viewport */
+    }
+}
+
+/* Base styles for the ::before pseudo-element */
+.ballAnimated .container::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 400px;
+    background-image: url(../img/ballFull.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    will-change: transform; /* Optimize for performance */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.5s ease-in-out; /* Smooth fade-in */
+}
+
+/* Class to trigger the animation */
+.ballAnimated .container.animate::before {
+    opacity: 1; /* Make it visible */
+    animation: rollLeftToRight 3s linear forwards; /* Adjust duration as needed */
+}
+/* BALL-ANIMATED */

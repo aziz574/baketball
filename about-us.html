@@ -19,23 +19,30 @@
 <body class="about-us">
 
     <!-- MAIN-HEADER -->
-
     <header class="mainHeader">
         <div class="container">
             <div class="headRow">
                 <div class="headLogo">
                     <a href="index.html"><img src="assets/img/logoMain.svg" alt=""></a>
                 </div>
-                <div class="headMenu">
+                <div class="headMenu" id="drawerItemHldr">
                     <ul>
                         <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="">Us Placements</a></li>
+                        <li><a href="US-PLACEMNET.HTML">Us Placements</a></li>
                         <li><a href="development-squad.html">Development Squad</a></li>
                         <li><a href="youth-engagement.html">Youth Engagement</a></li>
                         <li><a href="mailto:michael@airtimebasketball.com">Talk With Us</a></li>
                     </ul>
                 </div>
+                <div class="drawer-btn" id="hamburgerBtnOpen">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
             </div>
+
+        
+
         </div>
     </header>
 
@@ -115,193 +122,141 @@
         <div class="container">
             <h2>The Team</h2>
             <div class="mainTeamRow">
-                    <div class="teamDetailSecLeft">
-                        <div class="playerCardBox">
-                            <div class="playerCardInner">
-                                <a href=""></a>
-                                <div class="playerCardFront">
-                                    <div class="playerName">
-                                        <a href="#">
-                                            <h3>Kuai Deng
-                                            </h3>
-                                            <span>Wing/Forward</span>
-                                        </a>
-                                    </div>
-                                    <div class="playerImg">
-                                        <img src="assets/img/player-img-1.avif" alt="">
-                                    </div>
+                <div class="teamDetailSecLeft">
+                    <div class="playerCardBox">
+                        <div class="playerCardInner">
+                            <a href=""></a>
+                            <div class="playerCardFront">
+                                <div class="playerName">
+                                    <a href="#">
+                                        <h3>Kuai Deng
+                                        </h3>
+                                        <span>Wing/Forward</span>
+                                    </a>
                                 </div>
-                                <div class="playerCardBack">
-                                    <div class="playerBackLogo">
-                                        <img src="assets/img/player-card-back-logo.png" alt="">
-                                    </div>
-                                    <div class="playerCardDeatils">
-                                        <h4>Kuai Deng</h4>
-                                        <ul>
-                                            <li><strong>Position:</strong> Wing/Forward</li>
-                                            <li><strong>Height: </strong>6'10</li>
-                                            <li><strong>Class: </strong>2025</li>
-                                            <li><strong>From: </strong>Grange, SA</li>
-                                            <li><strong>School: </strong>The Patrick School (NJ)</li>
-                                            <li><strong>AUS High School: </strong>Trinity College</li>
-                                            <li><strong>Club: </strong>Eastside Rams</li>
-                                        </ul>
-                                    </div>
+                                <div class="playerImg">
+                                    <img src="assets/img/player-img-1.avif" alt="">
+                                </div>
+                            </div>
+                            <div class="playerCardBack">
+                                <div class="playerBackLogo">
+                                    <img src="assets/img/player-card-back-logo.png" alt="">
+                                </div>
+                                <div class="playerCardDeatils">
+                                    <h4>Kuai Deng</h4>
+                                    <ul>
+                                        <li><strong>Position:</strong> Wing/Forward</li>
+                                        <li><strong>Height: </strong>6'10</li>
+                                        <li><strong>Class: </strong>2025</li>
+                                        <li><strong>From: </strong>Grange, SA</li>
+                                        <li><strong>School: </strong>The Patrick School (NJ)</li>
+                                        <li><strong>AUS High School: </strong>Trinity College</li>
+                                        <li><strong>Club: </strong>Eastside Rams</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="teamDetailSecRight">
-                        <span>[Michael Houben - CEO] </span>
-                        <p>With a background in basketball media (with work featured on The Pick and Roll, NBA
-                            Australia, NBL), as well as a scout, I came to learn the stories of many athletes, as well
-                            as observe the inefficiencies in the Australian basketball development landscape.
-                        </p>
-                        <p>Having worked in the youth work sector and in schools, my philosophy is that young athletes
-                            need to be seen and supported, not just as athletes, but as people - no more so than in this
-                            current time where athletes are being treated further and further like commodities. This
-                            belief has informed our holistic approach to athlete development and is the backbone of
-                            Airtime's inception.</p>
-                        <p>With strong networks throughout the US high school and college space, as well as the NBL and
-                            NBA, I’ll be hands-on in guiding our elite athletes towards opportunities beyond Airtime
-                            programs and onto greater success.</p>
-                    </div>
+                </div>
+                <div class="teamDetailSecRight">
+                    <span>[Michael Houben - CEO] </span>
+                    <p>With a background in basketball media (with work featured on The Pick and Roll, NBA
+                        Australia, NBL), as well as a scout, I came to learn the stories of many athletes, as well
+                        as observe the inefficiencies in the Australian basketball development landscape.
+                    </p>
+                    <p>Having worked in the youth work sector and in schools, my philosophy is that young athletes
+                        need to be seen and supported, not just as athletes, but as people - no more so than in this
+                        current time where athletes are being treated further and further like commodities. This
+                        belief has informed our holistic approach to athlete development and is the backbone of
+                        Airtime's inception.</p>
+                    <p>With strong networks throughout the US high school and college space, as well as the NBL and
+                        NBA, I’ll be hands-on in guiding our elite athletes towards opportunities beyond Airtime
+                        programs and onto greater success.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- MAIN-TEAM -->
 
-    <!-- CONTENT-WITH-BOX -->
 
-    <section class="cntWithBox">
+    <!-- MAIN-TEAM -->
+
+    <section class="mainTeam invertedTeam">
         <div class="container">
-            <h2>Key elements of our Development Training include:</h2>
-            <div class="contWithBoxRow">
-                <div class="contBox">
-                    <p>Skill Building: Players are taught essential basketball techniques, from ball handling and
-                        shooting mechanics to defensive positioning and court awareness. We ensure a strong foundation
-                        that allows athletes to elevate their game to the next level. </p>
+            <div class="mainTeamRow">
+                <div class="teamDetailSecLeft">
+                    <div class="playerCardBox">
+                        <div class="playerCardInner">
+                            <a href=""></a>
+                            <div class="playerCardFront">
+                                <div class="playerName">
+                                    <a href="#">
+                                        <h3>Kuai Deng
+                                        </h3>
+                                        <span>Wing/Forward</span>
+                                    </a>
+                                </div>
+                                <div class="playerImg">
+                                    <img src="assets/img/player-img-1.avif" alt="">
+                                </div>
+                            </div>
+                            <div class="playerCardBack">
+                                <div class="playerBackLogo">
+                                    <img src="assets/img/player-card-back-logo.png" alt="">
+                                </div>
+                                <div class="playerCardDeatils">
+                                    <h4>Kuai Deng</h4>
+                                    <ul>
+                                        <li><strong>Position:</strong> Wing/Forward</li>
+                                        <li><strong>Height: </strong>6'10</li>
+                                        <li><strong>Class: </strong>2025</li>
+                                        <li><strong>From: </strong>Grange, SA</li>
+                                        <li><strong>School: </strong>The Patrick School (NJ)</li>
+                                        <li><strong>AUS High School: </strong>Trinity College</li>
+                                        <li><strong>Club: </strong>Eastside Rams</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="contBox">
-                    <p>Pathways: Our program provides for athletes around high school, college and professional
-                        pathways, as well as opportunities to be involved in both local and international tournaments.
+                <div class="teamDetailSecRight">
+                    <span>[Michael Houben - CEO] </span>
+                    <p>With a background in basketball media (with work featured on The Pick and Roll, NBA
+                        Australia, NBL), as well as a scout, I came to learn the stories of many athletes, as well
+                        as observe the inefficiencies in the Australian basketball development landscape.
                     </p>
+                    <p>Having worked in the youth work sector and in schools, my philosophy is that young athletes
+                        need to be seen and supported, not just as athletes, but as people - no more so than in this
+                        current time where athletes are being treated further and further like commodities. This
+                        belief has informed our holistic approach to athlete development and is the backbone of
+                        Airtime's inception.</p>
+                    <p>With strong networks throughout the US high school and college space, as well as the NBL and
+                        NBA, I’ll be hands-on in guiding our elite athletes towards opportunities beyond Airtime
+                        programs and onto greater success.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTENT-WITH-BOX -->
+    <!-- MAIN-TEAM -->
 
-    <!-- CONTENT-WITH-BOX -->
+    <!-- REACH-OUT -->
 
-    <section class="cntWithBox moreBox">
+    <section class="reachOuMain">
         <div class="container">
-            <h2>Where you can find us training:</h2>
-            <div class="contWithBoxRow">
-                <div class="contBox">
-                    <h3>Central Melbourne</h3>
-                    <span>Narrandjeri Stadium </span>
-                    <p>Monday, Thursday and Friday mornings </p>
-                    <a href="" class="contBoxBtn">Submit An Inquiry</a>
-                </div>
-                <div class="contBox">
-                    <h3>Western Suburbs
-                    </h3>
-                    <span>West Sunshine Community Centre
-
-                    </span>
-                    <p>Days TBA
-
-                    </p>
-                    <a href="" class="contBoxBtn">Submit An Inquiry</a>
-                </div>
-                <div class="contBox">
-                    <h3>Eastern Suburbs
-                    </h3>
-                    <span>TBA
-
-                    </span>
-                    <p>Currently taking </p>
-                    <a href="" class="contBoxBtn">expressions of interest</a>
-                </div>
-            </div>
-        </div>
-        <div class="reachOut">
-            <p>Empowering youth through basketball, from grassroots to the games highest levels.</p>
-            <div class="mainBtn">
-                <a href="#">reach<span>o</span>ut</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTENT-WITH-BOX -->
-
-    <!-- LEFT-IMG-CONTENT -->
-
-    <section class="leftBoxImgContent">
-        <div class="container">
-            <div class="leftImgBoxRow">
-                <div class="BoxContentImg">
-                    <img src="assets/img/development-sec-img.avif" alt="">
-                </div>
-                <div class="BoxContentContent">
-                    <img src="assets/img/ball-flying.png" alt="">
-                    <p>Airtime's development squads send players over to compete in overseas tournaments, such as the
-                        Taiwanese TYAI CUP, pictured here (Dec 2024)</p>
+            <div class="reachOut">
+                <p>Are you an athlete? Make an inquiry with us now!
+                </p>
+                <div class="mainBtn">
+                    <a href="#">reach<span>o</span>ut</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- LEFT-IMG-CONTENT -->
-
-    <!-- COMPANY-SLIDER -->
-
-    <section class="companySlider">
-        <div class="container">
-            <h2>Airtime's Youth Engagement Program is proudly supported by:</h2>
-            <!-- Swiper Container -->
-            <div class="swiper mySwiper logoSlider">
-                <div class="swiper-wrapper">
-                    <!-- Swiper Slides -->
-                    <div class="swiper-slide">
-                        <img src="assets/img/wilson.avif" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/img/airbank.avif" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/img/wilson.avif" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/img/airbank.avif" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/img/wilson.avif" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/img/airbank.avif" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/img/wilson.avif" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/img/airbank.avif" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/img/wilson.avif" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/img/airbank.avif" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- COMPANY-SLIDER -->
+    <!-- REACH-OUT -->
 
     <!-- FALLING-IMG -->
 
