@@ -3,6 +3,19 @@
         max-width: 80rem;
         top: -34rem;
     }
+
+    @keyframes rollLeftToRight {
+        0% {
+            transform: translateX(-100%) rotate(0deg);
+            /* Start off-screen left */
+        }
+    
+        100% {
+            transform: translateX(calc(100vw - 800px)) rotate(360deg);
+            /* Move to the right edge of the viewport */
+        }
+    }
+
 }
 
 @media only screen and (max-width : 1200px) {
@@ -285,6 +298,208 @@
         }
     }
 
+    .development-squad .banContent p {
+        max-width: 600px;
+    }
+
+    .development-squad .banContent h1::after {
+        max-width: 360px;
+    }
+
+    .developmentSquad {
+        margin: 80px 0;
+    }
+
+    .devSqaudImg {
+        height: 500px;
+        padding: 30px;
+    }
+
+    .cntWithBox {
+        margin: 80px 0;
+    }
+
+    .contBox {
+        padding: 30px;
+    }
+
+    .contBox h3 {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .contWithBoxRow {
+        margin-top: 40px;
+    }
+
+    .reachOut {
+        margin: 80px 0;
+    }
+
+    .leftBoxImgContent {
+        margin: 80px 0;
+    }
+
+    .BoxContentImg {
+        padding: 30px;
+        height: 500px;
+    }
+
+    .BoxContentContent img {
+        height: 170px;
+        width: 170px;
+    }
+
+    .BoxContentContent p {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .companySlider {
+        margin: 80px 0;
+    }
+
+    .logoSlider .swiper-wrapper .swiper-slide img {
+        height: 160px;
+        width: 160px;
+    }
+
+    .youth-engagement .banContent h1::after {
+        max-width: 600px;
+    }
+
+    .youthDeatilMain {
+        margin: 80px 0;
+    }
+
+    .youthImg {
+        padding: 30px;
+    }
+
+    .youthContent {
+        padding: 30px;
+    }
+
+    .studyMain {
+        margin: 80px 0;
+    }
+
+    .studyBox {
+        padding: 30px;
+    }
+
+    .studyBox:nth-child(1)::after {
+        height: 180px;
+        width: 130px;
+        bottom: -140px;
+    }
+
+    .studyBox:nth-child(2)::after {
+        height: 170px;
+        width: 120px;
+    }
+
+    .studyBox:nth-child(3)::after {
+        height: 180px;
+        width: 100px;
+        right: -5px;
+    }
+
+    .studyBox h3 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .about-us .banContent h1 {
+        font-size: 50px;
+        line-height: 50px;
+        max-width: 600px;
+    }
+
+    .about-us .banContent h1::after {
+        height: 18px;
+        bottom: 14px;
+    }
+
+    .about-us .banContent p {
+        max-width: 600px;
+    }
+
+    .mainTeam {
+        padding: 80px 0;
+    }
+
+    .mainTeam h2 {
+        font-size: 38px;
+        margin-bottom: 40px;
+    }
+
+    .mainTeam .container::after {
+        height: 160px;
+        width: 160px;
+        bottom: -160px;
+    }
+
+    .mainTeamRow {
+        grid-template-columns: 28% 1fr;
+    }
+
+    .mainTeam.invertedTeam .mainTeamRow {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .mainTeam.invertedTeam .mainTeamRow::before {
+        left: -20px;
+        width: 40px;
+    }
+
+    .mainTeam.invertedTeam .mainTeamRow::after {
+        width: 40px;
+        right: -20px;
+    }
+
+    .mainTeam.invertedTeam .container::after {
+        height: 200px;
+        width: 200px;
+        left: 20px;
+    }
+
+    .mainTeam.invertedTeam .mainTeamRow {
+        grid-template-columns: 1fr 32%;
+    }
+
+    .innerPlayer {
+        margin: 80px 0;
+    }
+
+    .innPlayerRow {
+        padding: 30px;
+        height: 400px;
+    }
+
+    .innpLAYERcnt h3 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .innPlyrRow ul li {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .clmnBxrIGHT p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .columnBox {
+        margin: 80px 0;
+    }
+
+    .columnBox .mainBtn {
+        margin-top: 40px;
+    }
 
 }
 
@@ -469,6 +684,195 @@
 
     .us-placement .playerCardBoxHldr {
         padding: 15px;
+    }
+
+    .development-squad .banContent h1::after {
+        max-width: 280px;
+    }
+
+    .developmentSquad {
+        margin: 60px 0;
+    }
+
+    .devSqaudImg {
+        height: 400px;
+        padding: 20px;
+    }
+
+    .cntWithBox {
+        margin: 60px 0;
+    }
+
+    .contBox {
+        padding: 20px;
+    }
+
+    .cntWithBox.moreBox .contWithBoxRow {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reachOut {
+        margin: 60px 0;
+        flex-direction: column;
+    }
+
+    .leftImgBoxRow {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .BoxContentImg {
+        padding: 20px;
+        height: 400px;
+    }
+
+    .BoxContentContent img {
+        height: 140px;
+        width: 140px;
+    }
+
+    .logoSlider .swiper-wrapper .swiper-slide img {
+        height: 130px;
+        width: 130px;
+    }
+
+    .companySlider {
+        margin: 60px 0;
+    }
+
+    .leftBoxImgContent {
+        margin: 60px 0;
+    }
+
+    .youth-engagement .banContent h1::after {
+        max-width: 450px;
+    }
+
+    .youthDeatilMain {
+        margin: 60px 0;
+    }
+
+    .youthImg {
+        padding: 20px;
+        height: 400px;
+    }
+
+    .youthDeatilsRow {
+        gap: 30px;
+    }
+
+    .youthContent {
+        padding: 20px;
+    }
+
+    .studyRow {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .studyBox {
+        padding: 20px;
+    }
+
+    .studyBox:nth-child(2)::after {
+        height: 140px;
+        width: 100px;
+        right: -20px;
+        left: auto;
+    }
+
+    .studyBox:nth-child(1)::after {
+        height: 140px;
+        width: 100px;
+        bottom: 0;
+        right: -20px;
+        left: auto;
+    }
+
+    .studyBox:nth-child(3)::after {
+        height: 140px;
+        width: 80px;
+        right: -6px;
+    }
+
+    .youth-engagement .banContent h1 {
+        max-width: 600px;
+    }
+
+    .studyMain {
+        margin: 60px 0;
+    }
+
+    .studyBox h3 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .studyMain h2 {
+        font-size: 34px;
+        line-height: 34px;
+    }
+
+    .mainTeam {
+        padding: 60px 0;
+    }
+
+    .mainTeamRow {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .mainTeamRow .playerCardBox {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .mainTeam.invertedTeam .mainTeamRow {
+        grid-template-columns: 1fr;
+    }
+
+    .mainTeam.invertedTeam .mainTeamRow .teamDetailSecLeft {
+        order: 1;
+    }
+
+    .mainTeam .container::after {
+        height: 130px;
+        width: 130px;
+        bottom: -130px;
+    }
+
+    .innerPlayer {
+        margin: 60px 0;
+    }
+
+    .innPlayerRow {
+        padding: 20px;
+        height: 400px;
+    }
+
+    .innpLAYERcnt h3 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .innPlyrRow ul {
+        gap: 20px;
+    }
+
+    .innPlyrRow ul li {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .columnBox {
+        margin: 60px 0;
+    }
+
+    .clmnBXRow {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .columnBox.inverted .clmnBxrIGHT {
+        order: 2;
     }
 
 }
@@ -687,5 +1091,323 @@
         }
     }
 
+    .development-squad .banContent h1::after {
+        max-width: 160px;
+    }
+
+    .developmentSquad {
+        margin: 40px 0;
+    }
+
+    .devSqaudImg {
+        height: 300px;
+        padding: 10px;
+    }
+
+    .cntWithBox {
+        margin: 40px 0;
+    }
+
+    .cntWithBox h2 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .contWithBoxRow {
+        margin-top: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contBox:first-child {
+        border-right: 2px dashed #fff;
+        ;
+    }
+
+    .contBox {
+        padding: 15px;
+    }
+
+    .contBox p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .cntWithBox.moreBox .contWithBoxRow {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contBox h3 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .contBox {
+        gap: 13px;
+    }
+
+    .contBox span {
+        font-size: 12px;
+        line-height: 12px;
+        padding: 8px;
+    }
+
+    .contBoxBtn {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .reachOut {
+        margin: 40px 0;
+        gap: 20px;
+    }
+
+    .reachOut p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .leftBoxImgContent {
+        margin: 40px 0;
+    }
+
+    .BoxContentImg {
+        padding: 12px;
+        height: 300px;
+    }
+
+    .leftImgBoxRow {
+        gap: 20px;
+    }
+
+    .BoxContentContent img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .BoxContentContent p {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .companySlider {
+        margin: 40px 0;
+    }
+
+    .companySlider .container h2 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .companySlider .container h2 {
+        margin: 0 auto 30px;
+    }
+
+    .logoSlider .swiper-wrapper .swiper-slide img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .youth-engagement .banContent h1 {
+        max-width: 300px;
+    }
+
+    .youth-engagement .banContent h1::after {
+        max-width: 270px;
+    }
+
+    .youthDeatilMain {
+        margin: 40px 0;
+    }
+
+    .youthImg {
+        padding: 13px;
+        height: 300px;
+    }
+
+    .youthContent {
+        padding: 15px;
+    }
+
+    .youthContent h2 {
+        font-size: 28px;
+        line-height: 28px;
+        margin: 10px 0;
+    }
+
+    .youthContent p {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 10px 0;
+    }
+
+    .youthContent img {
+        height: 40px;
+        width: 100px;
+    }
+
+    .studyRow {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .studyMain {
+        margin: 40px 0;
+    }
+
+    .studyBox {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .studyBox h3 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .studyBox:nth-child(1)::after {
+        height: 120px;
+        width: 80px;
+        right: 0;
+    }
+
+    .studyBox:nth-child(2)::after {
+        height: 120px;
+        width: 80px;
+        right: 0;
+        top: 0;
+    }
+
+    .studyBox p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .studyBox:nth-child(3)::after {
+        height: 120px;
+        width: 80px;
+        right: -15px;
+        bottom: -30px;
+    }
+
+    .about-us .banContent h1 {
+        font-size: 34px;
+        line-height: 34px;
+        max-width: 300px;
+    }
+
+    .about-us .banContent h1::after {
+        height: 14px;
+        bottom: 10px;
+        max-width: 260px;
+    }
+
+    .studyMain h2 {
+        font-size: 28px;
+        line-height: 28px;
+        margin-bottom: 40px;
+    }
+
+    .mainTeam {
+        padding: 40px 0;
+    }
+
+    .mainTeam h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .mainTeamRow .playerCardBox {
+        width: 290px;
+    }
+
+    .teamDetailSecRight span,
+    .teamDetailSecRight p {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 10px 0;
+    }
+
+    .mainTeam.invertedTeam .mainTeamRow {
+        padding: 0;
+    }
+
+    .mainTeam .container::after {
+        height: 100px;
+        width: 100px;
+        bottom: -100px;
+    }
+
+    .mainTeam.invertedTeam .mainTeamRow::after {
+        display: none;
+    }
+
+    .mainTeam.invertedTeam .mainTeamRow::before {
+        display: none;
+    }
+
+    .mainTeam.invertedTeam .container::after {
+        display: none;
+    }
+
+    .mainTeam .container::after {
+        display: none;
+    }
+
+    .innerPlayer {
+        margin: 40px 0;
+    }
+
+    .innPlayerRow {
+        padding: 13px;
+    }
+
+    .innpLAYERcnt h3 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .innpLAYERcnt {
+        gap: 10px;
+    }
+
+    .innpLAYERcnt p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .innerPlyrDet {
+        padding: 30px 0;
+    }
+
+    .innPlyrRow ul li {
+        font-size: 14px;
+        line-height: 14px;
+        width: 100%;
+    }
+
+    .innPlyrRow ul {
+        gap: 10px;
+        padding-left: 20px;
+    }
+
+    .columnBox {
+        margin: 40px 0;
+    }
+
+    .clmnBxrIGHT p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .clmnBxrIGHT p:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    .clmnBXRow {
+        gap: 20px;
+    }
+
+    .columnBox .mainBtn {
+        margin-top: 30px;
+    }
 
 }

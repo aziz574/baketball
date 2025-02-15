@@ -786,7 +786,8 @@ body {
     height: 16.5rem;
     background: url(../img/falling-img.png) no-repeat transparent 0 0 / contain;
     animation: Footer_fall__XOStI 4s cubic-bezier(.4, 0, .6, 1) forwards;
-    animation-play-state: paused; /* Start with animations paused */
+    animation-play-state: paused;
+    /* Start with animations paused */
 }
 
 @keyframes Footer_fall__XOStI {
@@ -803,7 +804,8 @@ body {
     left: -10%;
     animation: Footer_fall1__8XTJp 6s ease-out forwards;
     animation-timing-function: ease;
-    animation-play-state: paused; /* Start with animations paused */
+    animation-play-state: paused;
+    /* Start with animations paused */
 }
 
 @keyframes Footer_fall1__8XTJp {
@@ -824,7 +826,8 @@ body {
     animation-duration: 5.5s;
     animation-timing-function: cubic-bezier(.82, 0, .18, 1);
     z-index: 1;
-    animation-play-state: paused; /* Start with animations paused */
+    animation-play-state: paused;
+    /* Start with animations paused */
 }
 
 @keyframes Footer_fall2__ocXSB {
@@ -841,7 +844,8 @@ body {
     left: 30%;
     animation-delay: .8s;
     animation-name: Footer_fall5__1ZRP1;
-    animation-play-state: paused; /* Start with animations paused */
+    animation-play-state: paused;
+    /* Start with animations paused */
 }
 
 @keyframes Footer_fall5__1ZRP1 {
@@ -859,7 +863,8 @@ body {
     animation-delay: 1s;
     animation-name: Footer_fall4__x0iaj;
     z-index: -1;
-    animation-play-state: paused; /* Start with animations paused */
+    animation-play-state: paused;
+    /* Start with animations paused */
 }
 
 @keyframes Footer_fall4__x0iaj {
@@ -876,7 +881,7 @@ body {
     right: -18rem;
     animation-delay: 1.2s;
     animation-name: Footer_fall3__uTHmX;
-    animation-play-state: paused; 
+    animation-play-state: paused;
 }
 
 @keyframes Footer_fall3__uTHmX {
@@ -893,7 +898,7 @@ body {
     right: 0;
     animation-delay: 1.2s;
     animation-name: Footer_fall6__dZm_u;
-    animation-play-state: paused; 
+    animation-play-state: paused;
 }
 
 @keyframes Footer_fall6__dZm_u {
@@ -1482,6 +1487,7 @@ body {
 .ballAnimated .container {
     padding: 0;
     position: relative;
+    max-width: 1600px;
 }
 
 .ballAnimated .container::before {
@@ -1518,10 +1524,13 @@ body {
 
 @keyframes rollLeftToRight {
     0% {
-        transform: translateX(-100%) rotate(0deg); /* Start off-screen left */
+        transform: translateX(-100%) rotate(0deg);
+        /* Start off-screen left */
     }
+
     100% {
-        transform: translateX(calc(100vw - 430px)) rotate(360deg); /* Move to the right edge of the viewport */
+        transform: translateX(calc(100vw - 430px)) rotate(360deg);
+        /* Move to the right edge of the viewport */
     }
 }
 
@@ -1537,14 +1546,161 @@ body {
     background-image: url(../img/ballFull.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    will-change: transform; /* Optimize for performance */
-    opacity: 0; /* Start hidden */
-    transition: opacity 0.5s ease-in-out; /* Smooth fade-in */
+    will-change: transform;
+    /* Optimize for performance */
+    opacity: 0;
+    /* Start hidden */
+    transition: opacity 0.5s ease-in-out;
+    /* Smooth fade-in */
 }
 
 /* Class to trigger the animation */
 .ballAnimated .container.animate::before {
-    opacity: 1; /* Make it visible */
-    animation: rollLeftToRight 3s linear forwards; /* Adjust duration as needed */
+    opacity: 1;
+    /* Make it visible */
+    animation: rollLeftToRight 3s linear forwards;
+    /* Adjust duration as needed */
 }
+
 /* BALL-ANIMATED */
+
+.innerPlayer {
+    margin: 100px 0;
+}
+
+.innPlayerRow {
+    padding: 40px;
+    height: 500px;
+    background: #fff;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.innPlayerRow img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 2px dashed #e58af7;
+    position: relative;
+}
+
+.innPlayerRow img::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #000;
+    left: 0;
+    top: 0;
+}
+
+.innpLAYERcnt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+    gap: 20px;
+    padding: 40px;
+}
+
+.innpLAYERcnt h3 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.innpLAYERcnt p {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+
+.innerPlyrDet {
+    padding: 40px 0;
+    background: #fff;
+}
+
+.innPlyrRow {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.innPlyrRow ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 30px;
+}
+
+.innPlyrRow ul li {
+    width: 47%;
+    color: #4141C1;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    list-style: disc;
+}
+
+.columnBox {
+    margin: 100px 0;
+}
+
+.columnBox.inverted .clmnBxLEFT {
+    order: 2;
+}
+
+.columnBox.inverted .clmnBxrIGHT {
+    order: 1;
+}
+
+.columnBox .mainBtn {
+justify-content: center;
+margin-top: 50px;
+margin-left: auto;
+margin-right: auto;
+padding-left: 0;
+}
+
+.clmnBXRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: center;
+}
+
+.clmnBxLEFT {
+    /* height: 700px; */
+    width: 100%;
+}
+
+.clmnBxLEFT img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.clmnBxrIGHT p{
+    font-size: 18px;
+    line-height: 26px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.clmnBxrIGHT p:not(:first-child){
+    margin-top: 15px;
+}
